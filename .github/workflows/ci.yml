@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v2
 
       # NOTE: ripgrep is required for line-of-code identification.
-      # TEST
+      
       - name: Install ripgrep
         run: sudo apt-get install -y ripgrep
       - name: Get BitBar APK
