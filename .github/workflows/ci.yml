@@ -42,7 +42,7 @@ jobs:
           token: ${{ secrets.NS_TOKEN }}
           app_file: app.apk
           # TODO: Replace the Group ID.
-          group_id: "c58dfa94-d060-4331-ab8e-d26241f88ff7"
+          group_id: "4a326c23-eaff-4d6e-ac99-6a63463bc34d"
 
   # Pulls the NowSecure report, converts it to SARIF and uploads it.
   process:
@@ -63,7 +63,7 @@ jobs:
           report_id: ${{ needs.scan.outputs.report_id }}
           token: ${{ secrets.NS_TOKEN }}
           # TODO: Replace the Group ID.
-          group_id: "c58dfa94-d060-4331-ab8e-d26241f88ff7"
+          group_id: "4a326c23-eaff-4d6e-ac99-6a63463bc34d"
           
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v1
